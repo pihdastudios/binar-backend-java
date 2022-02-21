@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.example</groupId>
-    <artifactId>HelloWorld03</artifactId>
+    <groupId>com.binar.example</groupId>
+    <artifactId>Challange1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -19,7 +19,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.0.0</version>
                 <configuration>
-                    <mainClass>com.example.HelloWorld03.ConditionalDemo</mainClass>
+                    <mainClass>com.binar.example.challange1.App</mainClass>
                 </configuration>
             </plugin>
         </plugins>
