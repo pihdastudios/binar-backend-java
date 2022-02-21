@@ -24,7 +24,7 @@ public class App {
         System.out.println("1. Luas");
         System.out.println("2. Volume");
         System.out.println("0. keluar");
-        var op = Integer.parseInt(scanner.nextLine());
+        int op = Integer.parseInt(scanner.nextLine());
         if (op != 0) {
             if (op == 1) {
                 calculateArea();
@@ -46,7 +46,7 @@ public class App {
         System.out.println("3. Segitiga");
         System.out.println("4. Persegi Panjang");
         System.out.println("0. Main Menu");
-        var op = Integer.parseInt(scanner.nextLine());
+        int op = Integer.parseInt(scanner.nextLine());
         switch (op) {
             case 0:
                 mainMenu();
@@ -69,11 +69,11 @@ public class App {
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan alas");
                 System.out.println("----------------------------------------");
-                var w = Integer.parseInt(scanner.nextLine());
+                int w = Integer.parseInt(scanner.nextLine());
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan tinggi");
                 System.out.println("----------------------------------------");
-                var h = Integer.parseInt(scanner.nextLine());
+                int h = Integer.parseInt(scanner.nextLine());
                 Integer.parseInt(scanner.nextLine());
                 System.out.println(new Triangle(w, h).getArea());
                 break;
@@ -82,11 +82,11 @@ public class App {
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan panjang");
                 System.out.println("----------------------------------------");
-                var l = Integer.parseInt(scanner.nextLine());
+                int l = Integer.parseInt(scanner.nextLine());
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan lebar");
                 System.out.println("----------------------------------------");
-                var w = Integer.parseInt(scanner.nextLine());
+                int w = Integer.parseInt(scanner.nextLine());
                 System.out.println(new Rectangle(l, w).getArea());
                 break;
             }
@@ -106,7 +106,7 @@ public class App {
         System.out.println("2. Balok");
         System.out.println("3. Tabung");
         System.out.println("0. Main Menu");
-        var op = Integer.parseInt(scanner.nextLine());
+        int op = Integer.parseInt(scanner.nextLine());
         switch (op) {
             case 0:
                 mainMenu();
@@ -122,15 +122,15 @@ public class App {
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan panjang");
                 System.out.println("----------------------------------------");
-                var l = Integer.parseInt(scanner.nextLine());
+                int l = Integer.parseInt(scanner.nextLine());
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan lebar");
                 System.out.println("----------------------------------------");
-                var w = Integer.parseInt(scanner.nextLine());
+                int w = Integer.parseInt(scanner.nextLine());
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan tinggi");
                 System.out.println("----------------------------------------");
-                var h = Integer.parseInt(scanner.nextLine());
+                int h = Integer.parseInt(scanner.nextLine());
                 System.out.println(new SquarePrism(l, w, h).getVolume());
                 break;
             }
@@ -138,11 +138,11 @@ public class App {
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan jari-jari");
                 System.out.println("----------------------------------------");
-                var r = Integer.parseInt(scanner.nextLine());
+                int r = Integer.parseInt(scanner.nextLine());
                 System.out.println("----------------------------------------");
                 System.out.println("Masukan tinggi");
                 System.out.println("----------------------------------------");
-                var h = Integer.parseInt(scanner.nextLine());
+                int h = Integer.parseInt(scanner.nextLine());
                 System.out.println(new Cylinder(r, h).getVolume());
                 break;
             }
